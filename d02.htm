@@ -1,0 +1,24 @@
+<html>
+    <head>
+    <meta charset="utf-8">
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+    <script type="text/javascript" src="d02.js"></script>
+    </head>
+    <body ng-app="app">
+        <div ng-controller="emp">
+                <div>
+                    value of a is {{a}} <br>
+                    value of b is {{b}}
+                </div>
+                <hr>
+                <div> 
+                    value of a is <span ng-bind="a"></span><br>
+                    value of b is <span ng-bind="b"></span>
+                </div>
+                <hr>
+                <button ng-click="doDoubleAndSum()">Calculate</button>
+                <br>
+                sum= {{sum}}
+        </div>
+    </body>
+</html>
