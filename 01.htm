@@ -1,0 +1,19 @@
+<html>
+	<head>
+	<meta charset="utf-8">
+		<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.6.4/angular.min.js"></script>
+		<script type="text/javascript">
+			var app = angular.module("sample",[]);
+			app.controller("emp",function(){
+			this.Name="BizViz";
+			});	
+		</script>
+	</head>
+	<body ng-app="sample">
+		<div ng-controller="emp as o">
+		Hello {{o.Name}} !
+
+		</div>
+
+	</body>
+</html>
